@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  conversion-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: java-to-nodejs-converter
+    ports:
+      - "${API_PORT:-8000}:8000"
+    volumes:
+      # Mount outputs directory to persist converted projects
+      - ./outputs:/app/outputs
+      # Mount tmp for temporary files
+      - ./tmp:/app/tmp
+      # Optional: Mount config file if you have one
+      - ./llm_config.json:/app/llm_config.json:ro
+    # Load environment variables from .env file if it exists
+    env_file:
+      - .env
+    environment:
+      # Python settings
+      - PYTHONUNBUFFERED=1
+      # LLM configuration from environment or .env file
+      # These will override .env values if set in current shell
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - GLM_API_KEY=${GLM_API_KEY:-}
+      - GLM_BASE_URL=${GLM_BASE_URL:-}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/docs"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    # Optional: Resource limits (uncomment if needed)
+    # deploy:
+    #   resources:
+    #     limits:
+    #       cpus: '${CPU_LIMIT:-2}'
+    #       memory: ${MEMORY_LIMIT:-4g}
+

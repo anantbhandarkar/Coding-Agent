@@ -1,0 +1,47 @@
+# LLM Configuration (uses environment variable placeholders)
+# llm_config.json - now allowed to commit as it contains only env var references
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Output directories
+my-output/
+my-output-glm/
+my-output-glm-run-1/
+# outputs/ - Allow committing converted outputs (uncommented from above)
+# Uncomment the line below if you want to ignore outputs again:
+# outputs/
+output/
+dist/
+build/
+
+# Cloned repositories (temporary)
+SakilaProject-master/
+*-master/
+
+# Temporary files
+tmp/
+/tmp/
+*.tmp
+

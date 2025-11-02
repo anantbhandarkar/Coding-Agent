@@ -1,0 +1,325 @@
+{
+  "projectOverview": "This is a Spring Boot web application for a film rental store management system based on the Sakila database model. The application provides three user tiers - visitors can browse films and actors, customers can rent films and view their rental history, while owners have full administrative control to manage inventory, customers, and film details. Key features include film/actor browsing with search capabilities, customer authentication, rental processing, and an owner dashboard for managing the rental business with full CRUD operations on films and customer data.",
+  "modules": [
+    {
+      "name": "MainController",
+      "description": "REST controller for handling HTTP requests related to main operations",
+      "type": "Controller",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/controller/MainController.java"
+    },
+    {
+      "name": "CategoryController",
+      "description": "REST controller for handling HTTP requests related to category operations",
+      "type": "Controller",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/controller/CategoryController.java"
+    },
+    {
+      "name": "FilmController",
+      "description": "REST controller for handling HTTP requests related to film operations",
+      "type": "Controller",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/controller/FilmController.java"
+    },
+    {
+      "name": "CustomerController",
+      "description": "REST controller for handling HTTP requests related to customer operations",
+      "type": "Controller",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/controller/CustomerController.java"
+    },
+    {
+      "name": "ActorController",
+      "description": "REST controller for handling HTTP requests related to actor operations",
+      "type": "Controller",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/controller/ActorController.java"
+    },
+    {
+      "name": "StaffController",
+      "description": "REST controller for handling HTTP requests related to staff operations",
+      "type": "Controller",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/controller/StaffController.java"
+    },
+    {
+      "name": "UserDetailsServiceImpl",
+      "description": "Service class for userdetailsserviceimpl operations",
+      "type": "Service",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/securingweb/UserDetailsServiceImpl.java"
+    },
+    {
+      "name": "InventoryService",
+      "description": "Service class providing business logic for inventory management",
+      "type": "Service",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/services/InventoryService.java"
+    },
+    {
+      "name": "StaffService",
+      "description": "Service class providing business logic for staff management",
+      "type": "Service",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/services/StaffService.java"
+    },
+    {
+      "name": "CategoryService",
+      "description": "Service class providing business logic for category management",
+      "type": "Service",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/services/CategoryService.java"
+    },
+    {
+      "name": "CustomerService",
+      "description": "Service class providing business logic for customer management",
+      "type": "Service",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/services/CustomerService.java"
+    },
+    {
+      "name": "FilmService",
+      "description": "Service class providing business logic for film management",
+      "type": "Service",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/services/FilmService.java"
+    },
+    {
+      "name": "ActorService",
+      "description": "Service class providing business logic for actor management",
+      "type": "Service",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/services/ActorService.java"
+    },
+    {
+      "name": "RentalService",
+      "description": "Service class providing business logic for rental management",
+      "type": "Service",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/services/RentalService.java"
+    },
+    {
+      "name": "InventoryRepository",
+      "description": "Data access repository for inventory entities",
+      "type": "Repository",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/respositories/InventoryRepository.java"
+    },
+    {
+      "name": "RentalRepository",
+      "description": "Data access repository for rental entities",
+      "type": "Repository",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/respositories/RentalRepository.java"
+    },
+    {
+      "name": "StaffRepository",
+      "description": "Data access repository for staff entities",
+      "type": "Repository",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/respositories/StaffRepository.java"
+    },
+    {
+      "name": "CustomerRepository",
+      "description": "Data access repository for customer entities",
+      "type": "Repository",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/respositories/CustomerRepository.java"
+    },
+    {
+      "name": "CategoryRepository",
+      "description": "Data access repository for category entities",
+      "type": "Repository",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/respositories/CategoryRepository.java"
+    },
+    {
+      "name": "ActorRepository",
+      "description": "Data access repository for actor entities",
+      "type": "Repository",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/respositories/ActorRepository.java"
+    },
+    {
+      "name": "FilmRepository",
+      "description": "Data access repository for film entities",
+      "type": "Repository",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/respositories/FilmRepository.java"
+    },
+    {
+      "name": "FilmActor",
+      "description": "Entity class for filmactor operations",
+      "type": "Entity",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/entities/FilmActor.java"
+    },
+    {
+      "name": "Category",
+      "description": "Entity class for category operations",
+      "type": "Entity",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/entities/Category.java"
+    },
+    {
+      "name": "Actor",
+      "description": "Entity class for actor operations",
+      "type": "Entity",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/entities/Actor.java"
+    },
+    {
+      "name": "FilmCategoryPK",
+      "description": "Entity class for filmcategorypk operations",
+      "type": "Entity",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/entities/FilmCategoryPK.java"
+    },
+    {
+      "name": "FilmActorPK",
+      "description": "Entity class for filmactorpk operations",
+      "type": "Entity",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/entities/FilmActorPK.java"
+    },
+    {
+      "name": "FilmCategory",
+      "description": "Entity class for filmcategory operations",
+      "type": "Entity",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/entities/FilmCategory.java"
+    },
+    {
+      "name": "Rental",
+      "description": "Entity class for rental operations",
+      "type": "Entity",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/entities/Rental.java"
+    },
+    {
+      "name": "Inventory",
+      "description": "Entity class for inventory operations",
+      "type": "Entity",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/entities/Inventory.java"
+    },
+    {
+      "name": "FilmText",
+      "description": "Entity class for filmtext operations",
+      "type": "Entity",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/entities/FilmText.java"
+    },
+    {
+      "name": "Customer",
+      "description": "Entity class for customer operations",
+      "type": "Entity",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/entities/Customer.java"
+    },
+    {
+      "name": "Staff",
+      "description": "Entity class for staff operations",
+      "type": "Entity",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/entities/Staff.java"
+    },
+    {
+      "name": "Film",
+      "description": "Entity class for film operations",
+      "type": "Entity",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/entities/Film.java"
+    },
+    {
+      "name": "SakilaProjectApplication",
+      "description": "Configuration class for sakilaprojectapplication operations",
+      "type": "Config",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/SakilaProjectApplication.java"
+    },
+    {
+      "name": "WebSecurityConfig",
+      "description": "Configuration class for websecurityconfig operations",
+      "type": "Config",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/securingweb/WebSecurityConfig.java"
+    },
+    {
+      "name": "MvcConfig",
+      "description": "Configuration class for mvcconfig operations",
+      "type": "Config",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/securingweb/MvcConfig.java"
+    },
+    {
+      "name": "FailureHandler",
+      "description": "Class class for failurehandler operations",
+      "type": "Other",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/securingweb/FailureHandler.java"
+    },
+    {
+      "name": "SuccessHandler",
+      "description": "Class class for successhandler operations",
+      "type": "Other",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/securingweb/SuccessHandler.java"
+    },
+    {
+      "name": "Order",
+      "description": "Class class for order operations",
+      "type": "Other",
+      "methods": [],
+      "dependencies": [],
+      "filePath": "src/main/java/com/sparta/engineering72/sakilaproject/entities/Order.java"
+    },
+    {
+      "name": "MavenWrapperDownloader",
+      "description": "Class class for mavenwrapperdownloader operations",
+      "type": "Other",
+      "methods": [],
+      "dependencies": [],
+      "filePath": ".mvn/wrapper/MavenWrapperDownloader.java"
+    }
+  ]
+}

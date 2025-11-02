@@ -1,0 +1,24 @@
+{
+  "providers": {
+    "glm-4-6-zai": {
+      "provider": "glm",
+      "api_key": "${GLM_API_KEY}",
+      "model": "GLM-4.6",
+      "base_url": "https://api.z.ai/api/coding/paas/v4"
+    },
+    "openrouter-deepseek": {
+      "provider": "openrouter",
+      "api_key": "${OPENROUTER_API_KEY}",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "deepseek/deepseek-chat-v3.1:free"
+    },
+    "openai-custom": {
+      "provider": "openai",
+      "api_key": "${OPENAI_API_KEY}",
+      "base_url": "https://api.openai.com/v1/responses",
+      "model": "gpt-4o"
+    }
+  },
+  "default_profile": "openrouter-deepseek"
+}
+

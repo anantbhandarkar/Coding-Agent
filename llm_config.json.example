@@ -1,0 +1,28 @@
+{
+  "providers": {
+    "gemini-default": {
+      "provider": "gemini",
+      "api_key": "${GEMINI_API_KEY}",
+      "model": "gemini-2.5-flash"
+    },
+    "openrouter-deepseek": {
+      "provider": "openrouter",
+      "api_key": "${OPENROUTER_API_KEY}",
+      "model": "deepseek/deepseek-chat-v3.1:free"
+    },
+    "openai-gpt5": {
+      "provider": "openai",
+      "api_key": "${OPENAI_API_KEY}",
+      "model": "gpt-5-codex",
+      "base_url": "https://api.openai.com/v1"
+    },
+    "glm-custom": {
+      "provider": "glm",
+      "api_key": "${GLM_API_KEY}",
+      "model": "glm-4-6",
+      "base_url": "https://your-glm-endpoint.com"
+    }
+  },
+  "default_profile": "gemini-default"
+}
+
